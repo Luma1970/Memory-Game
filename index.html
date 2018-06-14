@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded:400,700|Kalam|Lobster+Two|Philosopher|Poor+Story" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+</head>
+<body>
+
+    <!-- Title and ranking -->
+<div class="container">
+    <header>
+        <h1 class="titolo">M<span class="special">a</span>tching G<span class="special">a</span>me</h1>
+    </header>
+
+    <section class="score-panel">
+        <div class="container">
+            <ul class="stars">
+                <li id="rank1"><i class="fa fa-star"></i></li>
+                <li id="rank2"><i class="fa fa-star"></i></li>
+                <li id="rank3"><i class="fa fa-star"></i></li>
+            </ul>
+            <div class="stile"><span class="moves" id="contatore"></span> Moves</div>
+            <div class="stile" id="timer"></div>
+            <div class="restart" id="newGame">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </div>
+    </section>
+
+    <ul class="deck" id="mazzo"></ul>
+</div>
+
+    <!-- The Modal -->
+<div id="vittoria" class="modal">
+
+  <!-- Modal content -->
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 class="titModal">You win!</h1>
+    <p class="txtModal">Your score is:<br><span id="stelle"></span><br>with <span id="mosse"></span> moves<br>in <span id="tempo"></span></p>
+
+    <!-- Play again button -->
+    <input type="button" class="start" id="playAgain" value="Play Again!">
+</div>
+
+    <!-- Victory gong -->
+    <audio id="sonoro"><source src="chinese-gong-daniel_simon.mp3" type="audio/mpeg"></audio>
+</div>
+
+    <!-- footer with attribution -->
+<footer>
+    <a class="attribution" href="http://soundbible.com/2148-Chinese-Gong.html">Sound of Chinese Gong courtesy of Daniel Simon</a>
+</footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
