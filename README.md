@@ -10,9 +10,10 @@ You can find the detailed instructions for the creation of this project here: [U
 
 ## Instructions
 
-1. Clic on a card, the card will flip showing you a symbol
-2. Clic on a second card, if the symbol match you found a pair, if they don't remeber the symbols and go on!
-3. When all the cards will have their mate, you win with a final score in star rating, moves and playing time :-)
+1. To play the game download the project on your computer and double clic on the index.html file
+2. Clic on a card, the card will flip showing you a symbol
+3. Clic on a second card, if the symbol match you found a pair, if they don't remeber the symbols and go on!
+4. When all the cards will have their mate, you win with a final score in star rating, moves and playing time :-)
 
 ## Dependencies
 
