@@ -92,8 +92,10 @@ tempo();
 // MOVES COUNTER
 let inc = 0;
 let mosse = function (n) {
-    inc += n;
+    inc += n / 2;
+    if(Number.isInteger(inc)) {
     document.getElementById('contatore').innerHTML = inc;
+    }
 }
 
 // STAR RATING
@@ -103,9 +105,9 @@ let grado3 = document.getElementById('rank3');
 
 function stelle() {
     let moves = document.getElementById('contatore').innerHTML;
-    if((moves > 20) && (moves <= 30)) {
+    if((moves > 16) && (moves <= 24)) {
         grado3.classList.add('nascondi');
-    } else if (moves > 30){
+    } else if (moves > 24){
         grado2.classList.add('nascondi');
         grado3.classList.add('nascondi');
     }
@@ -118,7 +120,7 @@ let newDeck = shuffle(tiles);
 // populates the game at the page loading
 window.onload = display(newDeck);
 
-pulsante.addEventListener('click', startButton)
+pulsante.addEventListener('click', startButton);
 
 function startButton() {
 // CARDS SHUFFLE;
@@ -134,7 +136,7 @@ function startButton() {
     tempo();
 
 // CLEAR COUNTER
-    resetCounter()
+    resetCounter();
 }
 
 function resetCounter() {
