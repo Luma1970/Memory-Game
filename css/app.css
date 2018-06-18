@@ -230,3 +230,30 @@ body {
     bottom: 0;
     font-size: 0.8em;
 }
+
+/* AGGIUNGERE CORREZIONE */
+@media screen and (max-width: 680px) {
+    .deck {
+    width: 462px;
+    min-height: 476px;
+    padding: 20px;
+    }
+
+    .deck .card {
+        height: 87.5px;
+        width: 87.5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .deck {
+    width: 330px;
+    min-height: 340px;
+    padding: 16px;
+    }
+
+    .deck .card {
+        height: 62.5px;
+        width: 62.5px;
+    }
+}
