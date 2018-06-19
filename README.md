@@ -18,6 +18,7 @@ You can find the detailed instructions for the creation of this project here: [U
 ## Dependencies
 
 First of all I am grateful to my Udacity mentor Shubham for his precious help and patience.<br>
+In this project I used [Google Fonts](https://fonts.google.com/), [Font Awesome](https://fontawesome.com/) and the library [SoundJS](https://www.createjs.com/soundjs)
 To proceed in this project I have consulted also: [Stack Overflow](https://stackoverflow.com/), [w3schooles.com](https://www.w3schools.com/js/default.asp), [MDN](https://developer.mozilla.org/it/docs/Web/JavaScript) and [Git Hub](https://github.com/).
 The sound of the victory gong is courtesy of [Daniel Simon](http://soundbible.com/2148-Chinese-Gong.html).
 
