@@ -1,5 +1,16 @@
 // CARD LIST
-var tiles = ['fa-diamond', 'fa-anchor', 'fa-bolt', 'fa-cube', 'fa-paper-plane-o', 'fa-leaf', 'fa-bicycle', 'fa-bomb', 'fa-diamond', 'fa-anchor', 'fa-bolt', 'fa-cube', 'fa-paper-plane-o', 'fa-leaf', 'fa-bicycle', 'fa-bomb'];
+var tiles = [
+  'fa-diamond',
+  'fa-anchor',
+  'fa-bolt',
+  'fa-cube',
+  'fa-paper-plane-o',
+  'fa-leaf',
+  'fa-bicycle',
+  'fa-bomb',
+];
+
+tiles = tiles.concat(tiles);
 
 // ARRAY FOR CARD FLIPPED AND MATCHED
 let openCards = [];
@@ -32,7 +43,10 @@ function display(tiles) {
         icona.classList.add('fa', tile);
 
         lista.addEventListener('click', function() {
-            mosse(1);
+            if(lista.classList.contains('open')) { }
+            else {
+                mosse(1);
+            }
             stelle();
 
 //pushes the flipped cards in the openCards array
@@ -84,7 +98,7 @@ let secondi, minuti, scorrere;
                 minuti++;
                 secondi = 0;
             }
-            document.getElementById('timer').textContent = secondi + " seconds" +  " and " + minuti + " minutes";
+            document.getElementById('timer').textContent = `${secondi}  seconds and ${minuti} minutes`;
         }
     }
 tempo();
